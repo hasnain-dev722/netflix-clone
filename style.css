@@ -58,3 +58,13 @@ font-family: Arial, sans-serif;
     font-weight: bold;
     max-width: 700px;
 }
+@media ( max-width:768px) {
+.logo-img { width:80px;
+}
+.hero-section h1 {
+    font-size: 1rem;
+}
+.hero-section p {
+    font-size: 0.9rem;
+}
+}
