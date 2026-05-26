@@ -128,7 +128,7 @@ font-family: Arial, sans-serif;
     padding:12px 36px;
 
     align-items: center;
-    padding: 12px 40px;
+    padding: 24px 50px;
     height:56px;
     width: 220px;
     width: max-content;
@@ -148,4 +148,18 @@ font-family: Arial, sans-serif;
 }
 input::placeholder {
     color: rgba(255, 255, 255, 0.7);
+}
+.trending-section{
+    height:4px;
+    /* background-color: #e50914; */
+    border-top:4px solid #e50914;
+    border-radius:50%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50%;
+    
+    margin-top: 230px;
+}
+.trending-section h2{
+    color:white;
 }
