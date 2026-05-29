@@ -18,6 +18,7 @@ font-family: Arial, sans-serif;
     background-position: center;
     height:100vh;
     width:100%;
+    overflow: hidden;
 
 }
 .top-nav{
@@ -52,6 +53,9 @@ font-family: Arial, sans-serif;
 }
 .hero-content {
     display: flex;
+    flex-grow: 1;
+    /* position: absolute; */
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     z-index: 2;
@@ -59,11 +63,13 @@ font-family: Arial, sans-serif;
     color: white;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
     gap: 20px;
     
 }
 .hero-content h1{
+
+    align-items: center;
     font-size: 4rem;
     font-weight: bold;
     max-width: 700px;
@@ -81,12 +87,14 @@ font-family: Arial, sans-serif;
 }
 
 .hero-content p{
+    align-items: center;
     font-size: 1.5rem;
      font-weight:bold ;
      /* margin-top: 20px; */
      
 }
 .hero-content h3{
+    align-items: center;
     font-size: 1rem;
     font-weight:400;
     line-height:1.5;
@@ -95,72 +103,77 @@ font-family: Arial, sans-serif;
     
 }
 .email-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding-left: 24px 16px 8px;
-    /* border-radius: 6px; */
-    overflow: hidden;
-    
-    
-
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+padding-left: 24px 16px 8px;
+/* border-radius: 6px; */
+overflow: hidden;
 }
 .email-input{
-    height:56px;
-    width: 350px;
-    padding: 30px;
-    
-    border-radius: 5px;
-    font-size: 1rem;
-        background-color: rgba(0,0,0,0.5);
-            border: 1px solid;
-            outline: none;
-            color: rgba(255, 255, 255, 0.25);
-            
-            padding: 12px
+height:56px;
+width: 350px;
+padding: 30px;
+border-radius: 5px;
+font-size: 1rem;
+background-color: rgba(0,0,0,0.5);
+border: 1px solid;
+outline: none;
+color: rgba(255, 255, 255, 0.25);       
+padding: 12px
 }
 .btn-get-started {
-    display: flex;
-    justify-content: center;
-    gap:16px;
-    padding:12px 36px;
-
-    align-items: center;
-    padding: 24px 50px;
-    height:56px;
-    width: 220px;
-    width: max-content;
+display: flex;
+justify-content: center;
+gap:16px;
+padding:12px 36px;
+align-items: center;
+padding: 24px 50px;
+height:56px;
+width: 220px;
+width: max-content;
     /* padding: 8px 20px; */
-    border: none;
-    border-radius: 5px;
-    background-color:#e50914 ;
-    color: white;
-    font-size:1.6rem;
-    font-weight: bold;
-    font-weight: 700;
-    padding: 8px 8px;
-    text-align: center;
-    cursor: pointer;
-    
-    
+border: none;
+border-radius: 5px;
+background-color:#e50914 ;
+color: white;
+font-size:1.6rem;
+font-weight: bold;
+font-weight: 700;
+padding: 8px 8px;
+text-align: center;
+cursor: pointer;
 }
 input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
-.trending-section{
-    height:4px;
-    /* background-color: #e50914; */
-    border-top:4px solid #e50914;
-    border-radius:50%;
+.trending-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #000000;
     width: 100%;
-    border-top-left-radius: 50%;
-    border-top-right-radius:50%;
-    
-    margin-top: 230px;
+    padding: 60px 0px;
+    z-index: 5;
+    margin-top: 0;
 }
+.trending-section::before {
+    content: "";
+  position: absolute;
+  top: -25px;
+  left:50%;
+  transform: translateX(-50%);
+  width:150%;
+    height:100px;
+     background: #000000;
+     border-top: 4px solid rgb(229,9,20);
+     border-radius: 50% 50% 0 0;
+     z-index: -1;
+ }
 .trending-section h2{
     color:white;
-}
+} 
 
 
